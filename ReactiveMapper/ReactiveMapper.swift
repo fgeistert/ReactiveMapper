@@ -9,7 +9,6 @@
 import Foundation
 import Mapper
 import ReactiveSwift
-import Result
 
 public let ReactiveMapperErrorDomain = "com.aschuch.ReactiveMapper.ErrorDomain"
 

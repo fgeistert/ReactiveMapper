@@ -35,10 +35,8 @@
 		4D6364061DD606C500A769A6 /* Encodeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6364051DD606C500A769A6 /* Encodeable.swift */; };
 		4DE9B52F1DD5E811005CB994 /* Mapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE9B52C1DD5E811005CB994 /* Mapper.framework */; };
 		4DE9B5301DD5E811005CB994 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE9B52D1DD5E811005CB994 /* ReactiveSwift.framework */; };
-		4DE9B5311DD5E811005CB994 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE9B52E1DD5E811005CB994 /* Result.framework */; };
 		4DE9B5321DD5E829005CB994 /* Mapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE9B52C1DD5E811005CB994 /* Mapper.framework */; };
 		4DE9B5331DD5E829005CB994 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE9B52D1DD5E811005CB994 /* ReactiveSwift.framework */; };
-		4DE9B5341DD5E829005CB994 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE9B52E1DD5E811005CB994 /* Result.framework */; };
 		4DE9B5371DD5E88C005CB994 /* ReactiveMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9B5361DD5E88C005CB994 /* ReactiveMapper.swift */; };
 /* End PBXBuildFile section */
 
@@ -123,7 +121,6 @@
 				4D2C26561DD5E1B700A107BB /* ReactiveMapper.framework in Frameworks */,
 				4DE9B5321DD5E829005CB994 /* Mapper.framework in Frameworks */,
 				4DE9B5331DD5E829005CB994 /* ReactiveSwift.framework in Frameworks */,
-				4DE9B5341DD5E829005CB994 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +130,6 @@
 			files = (
 				4DE9B52F1DD5E811005CB994 /* Mapper.framework in Frameworks */,
 				4DE9B5301DD5E811005CB994 /* ReactiveSwift.framework in Frameworks */,
-				4DE9B5311DD5E811005CB994 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +319,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Alexander Schuch";
 				TargetAttributes = {
 					4D2C26181DD5E1A200A107BB = {
@@ -334,7 +330,7 @@
 					4D2C26401DD5E1B700A107BB = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = PRXJBCN9SJ;
-						LastSwiftMigration = 0930;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					4D2C26481DD5E1B700A107BB = {
@@ -346,7 +342,7 @@
 			};
 			buildConfigurationList = 4D2C26141DD5E1A200A107BB /* Build configuration list for PBXProject "Example" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -407,7 +403,6 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Mapper.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
 			);
@@ -416,7 +411,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -494,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -552,6 +548,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -657,7 +654,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -685,7 +682,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aschuch.ReactiveMapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
